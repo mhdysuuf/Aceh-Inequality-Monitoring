@@ -5,7 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-COPY . .          # ← INI YANG KURANG
+COPY . .
 RUN npm run build
 
 EXPOSE 8080
